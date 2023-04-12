@@ -1,0 +1,32 @@
+import pandas as pd
+import talib as ta
+
+df=pd.read_csv("sber1.csv")
+a=df.iloc[0,4:8]
+d=df.iloc[0:1,4:8]
+print (df)
+
+def CDLLADDERBOTTOM(DataFrame):
+    res = ta.CDLLADDERBOTTOM(
+        DataFrame['<OPEN>'].values, DataFrame['<HIGH>'].values, DataFrame['<LOW>'].values, DataFrame['<CLOSE>'].values)
+    d = pd.DataFrame({'CDLLADDERBOTTOM': res}, index=DataFrame.index)
+    return d
+    
+print(CDLLADDERBOTTOM(df))
+d = CDLLADDERBOTTOM(df)
+print(d['CDLLADDERBOTTOM'].sum())
+
+def CDLCONCEALBABYSWALL(DataFrame):
+    res = ta.CDLCONCEALBABYSWALL(DataFrame['<OPEN>'].values, DataFrame['<HIGH>'].values, DataFrame['<LOW>'].values, DataFrame['<CLOSE>'].values)
+    d = pd.DataFrame({'CDLCONCEALBABYSWALL': res}, index=DataFrame.index)
+    return d
+    
+print(CDLCONCEALBABYSWALL(df))
+d = CDLCONCEALBABYSWALL(df)
+print(d['CDLCONCEALBABYSWALL'].sum())
+
+def CDL2CROWS(DataFrame):
+    res = ta.CDL2CROWS(
+        DataFrame['<OPEN>'].values, DataFrame['<HIGH>'].values, DataFrame['<LOW>'].values, DataFrame['<CLOSE>'].values)
+    return pd.DataFrame({'CDL2CROWS': res}, index=DataFrame.index) 
+print(CDL2CROWS(df))
