@@ -14,3 +14,18 @@ brew install xcodegen
 xcodegen generate
 ```
 3. Запустить проект
+
+## Форматирование кода
+1. Установить [SwiftFormat](https://github.com/nicklockwood/SwiftFormat)
+```
+brew install swiftformat
+```
+2. Для проверки соответсвия формату использовать:
+```
+swiftformat --lint --swiftversion 5.5 .
+```
+Для форматирования кода запустить:
+
+```
+swiftformat --swiftversion 5.5 .
+```
