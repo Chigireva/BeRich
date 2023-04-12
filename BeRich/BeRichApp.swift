@@ -11,7 +11,7 @@ import SwiftUI
 struct BeRichApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InteractiveLollipop()
         }
     }
 }

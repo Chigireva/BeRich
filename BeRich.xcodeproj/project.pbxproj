@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B13731E29E6D2E200861BC8 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13731D29E6D2E200861BC8 /* Stock.swift */; };
 		83D4AD2329E5B54000D3F490 /* BeRichApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4AD2229E5B54000D3F490 /* BeRichApp.swift */; };
 		83D4AD2529E5B54000D3F490 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4AD2429E5B54000D3F490 /* ContentView.swift */; };
 		83D4AD2729E5B54400D3F490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83D4AD2629E5B54400D3F490 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B13731D29E6D2E200861BC8 /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		83D4AD1F29E5B54000D3F490 /* BeRich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeRich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D4AD2229E5B54000D3F490 /* BeRichApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeRichApp.swift; sourceTree = "<group>"; };
 		83D4AD2429E5B54000D3F490 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				83D4AD2229E5B54000D3F490 /* BeRichApp.swift */,
 				83D4AD2429E5B54000D3F490 /* ContentView.swift */,
+				1B13731D29E6D2E200861BC8 /* Stock.swift */,
 				83D4AD2629E5B54400D3F490 /* Assets.xcassets */,
 				83D4AD2829E5B54400D3F490 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				83D4AD2529E5B54000D3F490 /* ContentView.swift in Sources */,
 				83D4AD2329E5B54000D3F490 /* BeRichApp.swift in Sources */,
+				1B13731E29E6D2E200861BC8 /* Stock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
